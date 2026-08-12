@@ -4,8 +4,8 @@ import cors from 'cors';
 
 import authorRoutes from './routes/authorRoutes.js';
 import { errorHandler } from './middlewares/errorHandler.js';
-/* const postRoutes = require('./routes/postRoutes');
-const commentRoutes = require('./routes/commentRoutes'); */
+import postRoutes from './routes/postRoutes.js';
+/* const commentRoutes = require('./routes/commentRoutes'); */
 
 const app = express();
 
@@ -15,8 +15,8 @@ app.use(express.json());
 
 // Mount Routes
 app.use('/authors', authorRoutes);
-/* app.use('/posts', postRoutes);
-app.use('/comments', commentRoutes); */
+app.use('/posts', postRoutes);
+/* app.use('/comments', commentRoutes); */
 
 app.get('/', (req, res) => {
   res.json({ message: "Henry Blog API is running successfully!" });
