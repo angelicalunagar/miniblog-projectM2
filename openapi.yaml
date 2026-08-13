@@ -4,9 +4,11 @@ info:
   description: API documentation for the Miniblog project (Authors and Posts).
   version: 1.0.0
 servers:
+  - url: https://miniblog-projectm2-production.up.railway.app
+    description: Producción en Railway
   - url: http://localhost:3000
     description: Local development server
-
+  
 paths:
   /authors:
     get:
