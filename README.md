@@ -56,7 +56,7 @@ miniblog-projectM2-main/
 ### 1. Clonar e instalar dependencias
 
 ```bash
-git clone [https://github.com/angelicalunagar/miniblog-projectM2.git](https://github.com/angelicalunagar/miniblog-projectM2.git)
+git clone https://github.com/angelicalunagar/miniblog-projectM2.git
 cd miniblog-projectM2
 npm install
 
@@ -118,6 +118,8 @@ Para visualizarla, puedes:
 
 * Copiar el contenido de `openapi.yaml` en el [Swagger Editor](https://editor.swagger.io/).
 * O utilizar una extensión de VS Code como "Swagger Viewer".
+* O consultar la documentación desplegada en Railway: [Ver documentación de la API](https://miniblog-projectm2-production.up.railway.app/api-docs/)
+ 
 
 ## Endpoints de la API
 
@@ -125,37 +127,37 @@ La API expone las siguientes rutas RESTful:
 
 ### Autores (`/authors`)
 
-* **GET `/authors**`: Obtiene la lista de todos los autores registrados.
+* **GET** `/authors`: Obtiene la lista de todos los autores registrados.
 
 
-* **POST `/authors**`: Crea un nuevo autor en el sistema.
+* **POST** `/authors`: Crea un nuevo autor en el sistema.
 
 
-* **GET `/authors/{id}**`: Obtiene los detalles de un autor específico mediante su ID.
+* **GET** `/authors/{id}`: Obtiene los detalles de un autor específico mediante su ID.
 
 
-* **PUT `/authors/{id}**`: Actualiza la información de un autor existente.
+* **PUT** `/authors/{id}`: Actualiza la información de un autor existente.
 
 
-* **DELETE `/authors/{id}**`: Elimina un autor del sistema.
+* **DELETE** `/authors/{id}`: Elimina un autor del sistema.
 
 
 
 ### Publicaciones (`/posts`)
 
-* **GET `/posts**`: Obtiene la lista completa de todas las publicaciones.
+* **GET** `/posts`: Obtiene la lista completa de todas las publicaciones.
 
 
-* **POST `/posts**`: Crea una nueva publicación.
+* **POST** `/posts`: Crea una nueva publicación.
 
 
-* **GET `/posts/{id}**`: Consulta el detalle de una publicación específica por su ID.
+* **GET** `/posts/{id}`: Consulta el detalle de una publicación específica por su ID.
 
 
-* **PUT `/posts/{id}**`: Actualiza el contenido o los datos de una publicación existente.
+* **PUT** `/posts/{id}`: Actualiza el contenido o los datos de una publicación existente.
 
 
-* **DELETE `/posts/{id}**`: Elimina una publicación del miniblog.
+* **DELETE** `/posts/{id}`: Elimina una publicación del miniblog.
 
 
 ## Deploy en Railway
@@ -198,6 +200,11 @@ Durante el desarrollo del proyecto se utilizó Gemini Flash-Lite Extended como h
 
 ### Ejemplos de prompts utilizados
 
-* **Prompt:**
+* **Ejemplo 1:**
+
 ![Prompt for Gemini's feedback](./assets/prompt-Gemini.png)
+
+* **Ejemplo 2:**
+
+![Prompt for Gemini's feedback](./assets/prompt-Gemini2.png)
 
