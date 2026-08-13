@@ -100,16 +100,28 @@ DB_PORT=5432
 
 ```
 
-### 4. Ejecución local y tests
+### 4. Ejecución local
 
 ```bash
 npm run dev     # Modo desarrollo
 npm start       # Modo producción
-npm test        # Modo testing
 
 ```
 
 La API estará disponible en `http://localhost:3000`.
+
+
+## Cómo ejecutar tests
+
+El proyecto incluye un entorno de pruebas configurado con Vitest. Para correr las pruebas unitarias y de integración, utiliza:  
+
+```bash
+npm test
+
+```
+
+Las reglas de ejecución se encuentran definidas en `vitest.config.js` y los casos de prueba en la carpeta `tests/`.
+
 
 ## Documentación OpenAPI
 
