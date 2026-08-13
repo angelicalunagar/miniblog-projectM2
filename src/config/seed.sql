@@ -17,6 +17,7 @@ INSERT INTO posts (title, content, author_id, published) VALUES
   ('Async/Await explicado', 'Las promesas simplifican el código asíncrono...', 1, false);
 
 -- Insertar comments de ejemplo
+-- Al final el extra credit no se incluyó, pero se deja esquema para futura implementación
 INSERT INTO comments (post_id, author_id, comment) VALUES
 (1, 3, '¡Excelente artículo Carlos! Muy clara la explicación sobre las bases de datos.'),
 (2, 1, 'Gracias Carlos, me alegra que te haya servido para el proyecto.'),

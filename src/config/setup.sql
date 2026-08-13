@@ -25,6 +25,7 @@ CREATE TABLE posts (
 );
 
 -- 3. Comments Table (Extra Credit: FK to posts and authors with CASCADE deletion)
+-- Al final el extra credit no se incluyó, pero se deja esquema para futura implementación
 CREATE TABLE comments (
     id SERIAL PRIMARY KEY,
     post_id INT NOT NULL,
